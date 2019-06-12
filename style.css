@@ -1,0 +1,236 @@
+/* reset
+ */
+*{
+    padding: 0;
+    margin: 0;
+}
+.clear{
+    clear: both;
+}
+h1, h2, h3, h4{
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p{
+    line-height: 1.5;
+}
+p, a{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header */
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+     url(pic2.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: centre;
+    background-attachment: fixed;
+}
+.overlay-inner {
+    background: rgba(0, 0, 0, 0.5);
+}
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li
+{
+    display: inline-block;
+}
+.main-nav li a, header a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+header a .self{
+
+    font-size: .7em;
+    display: inline;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 18px 69px;
+    border: none;
+}
+header .def{
+    text-align: center;
+    color: fff;
+    padding: 160px 0;
+}
+
+header .def h1, h3{
+    color: #fff;
+    
+}
+
+/* About section */
+.about 
+{
+    /* background-color: #890808; */
+    padding: 100px 0;
+    /* color: #fff; */
+    text-align: center;
+    
+}
+.about h1{
+    padding-bottom: 5px;
+    position: relative;
+    margin-bottom: 25px;
+}
+.about h1:after{
+    content: "";
+    position: absolute;
+    width: 14%;
+    left: 43%;
+    height: 2px;
+    background: #323232;
+    bottom: 0;
+}
+ .about p{
+    padding-top: 8px;
+ }
+/* Skills section */
+.skill
+{
+    padding: 55px 0;
+    background: #bec9f370;
+    /* text-align: center; */
+}
+.skill h1{
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.skill h1:after{
+    content: "";
+    position: absolute;
+    width: 14%;
+    left: 43%;
+    height: 2px;
+    background: #323232;
+    bottom: 0;
+}
+.skill h2{
+    text-align: left;
+}
+.line{
+    height: 25px;
+    min-width: 800px;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.line:before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index: -2;
+    background: #16191a;
+}
+.line:after{
+    content: '';
+    background: #333;
+    height: 25px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+.line1:after{
+    max-width: 90%;
+}
+
+/* Contact */
+ .contact{ 
+   padding: 50px 0;
+    background: url('img.jpg');
+    background-size: cover;
+} 
+
+.contact-form{
+    margin:0 auto;
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    /* position: absolute; */
+    left: 34%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat",sans-serif;
+}
+.contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+}
+.txtb{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.txtb input,.txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.btn{
+    display: block;
+    background: #9b59b6;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
